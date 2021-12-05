@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lista de Tarefas</title>
+        <script src="libs/jQuery/jquery.min.js"></script>
+        <script src="libs/semantic-ui/semantic.min.js"></script>
+        <link rel="stylesheet" href="libs/semantic-ui/semantic.min.css">
+    </head>
+    <body>
+        <header class="ui menu">
+            <a href="#" class="item header">
+                <h1>Lista de Tarefas</h1>
+            </a>
+        </header>
+        <main class="ui container grid">
+            <section class="ui two column row">
+                <section class="ui four wide column vertical menu">
+                    <div class="item header">Opções</div>
+                    <a href="#" class="item">
+                        <i class="circle add icon"></i> Nova Tarefa
+                    </a>
+                    <a href="#" class="item">
+                        <i class="circle filter icon"></i> Tarefas Pendentes
+                    </a>
+                    <a href="#" class="item">
+                        <i class="circle filter icon"></i> Tarefa Concluidas
+                    </a>
+                </section>
+                <section id="listar-tarefas">
+                    <!-- Preenchido dinamicamente -->
+                </section>
+            </section>
+            <section id="staging-area" style="display: none;">
+                Consigo ver?
+                <!-- Preenchido dinamicamente -->
+            </section>
+        </main>
+    </body>
+</html>

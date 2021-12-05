@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  app-tarefas-frontend:
+    container_name: app-tarefas-frontend
+    image: nginx
+    volumes:
+      - .:/usr/share/nginx/html
+    ports:
+      - 80:80
