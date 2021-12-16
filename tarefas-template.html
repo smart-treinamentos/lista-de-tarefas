@@ -1,0 +1,31 @@
+<form action="#" id="modal-tarefas" class="ui tiny modal form">
+    <header id="modal-titulo" class="ui header">
+        <!-- Preenchido dinamcamente -->
+    </header>
+    <section class="ui content">
+        <div class="ui field">
+            <input type="hidden" id="tarefa-id">
+            <input type="text" id="tarefa-ittulo" placeholder="Titulo da Tarefa">
+        </div>
+        <div class="ui field">
+            <input type="text" id="tarefa-descricao" placeholder="Descrição da Tarefa">
+        </div>
+        <div class="ui field">
+            <input type="checkbox" id="tarefa-concluida"> 
+            &nbsp;&nbsp; Está Concluida?
+        </div>
+        <div class="ui field">
+            <select id="tarefa-tag" class="ui dropdown">
+                <option value="">Selecione uma Tag</option>
+                <option value="1">Pessoal</option>
+                <option value="2">Trabalho</option>
+                <option value="3">Lazer</option>
+                <option value="4">Exercicios Fisicos</option>
+            </select>
+        </div>
+    </section>
+    <section class="ui actions field">
+        <button type="reset" class="ui negative button">Descartar</button>
+        <button type="submit" class="ui positive button">Salvar</button>
+    </section>
+</form>
