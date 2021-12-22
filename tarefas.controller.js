@@ -1,5 +1,11 @@
 function modalNovaTarefa() {
-    $("#modal-titulo").html("Criar Nova Tarefa");
+    $("#modal-titulo").html("Cadastrar Nova Tarefa");
+    $("#modal-tarefas").modal({
+        onApprove: function() {
+            let tarefa = obterDadosTarefa();
+            console.log(tarefa);
+        }
+    });
     $("#modal-tarefas").modal("toggle");
 }
 
