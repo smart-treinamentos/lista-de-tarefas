@@ -1,5 +1,5 @@
 function resetFormulario() {
-    
+    document.forms[0].reset();
 }
 
 function obterDadosTarefa() {

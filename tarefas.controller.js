@@ -3,10 +3,16 @@ function modalNovaTarefa() {
     $("#modal-tarefas").modal({
         onApprove: function() {
             let tarefa = obterDadosTarefa();
-            console.log(tarefa);
+            cadastrarTarefa(tarefa);
+            resetFormulario();
         }
     });
     $("#modal-tarefas").modal("toggle");
+}
+
+function cadastrarTarefa(tarefa) {
+    tarefa.id = new Date().getTime();
+    cadastrarTarefaLocalStora(tarefa);
 }
 
 $(document).ready(function () {

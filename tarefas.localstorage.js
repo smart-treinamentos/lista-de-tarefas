@@ -8,3 +8,9 @@ function deserializarLocalStorage() {
     let listaDeTarefas = localStorage.getItem(TAREFAS_STORAGE);
     return (listaDeTarefas != undefined) ? JSON.parse(listaDeTarefas) : [];
 }
+
+function cadastrarTarefaLocalStora(tarefa) {
+    let listaDeTarefas = deserializarLocalStorage();
+    listaDeTarefas.push(tarefa);
+    serializarLocalStorage(listaDeTarefas);
+}
